@@ -1,0 +1,26 @@
+{
+  "name": "brk-proxy-server",
+  "version": "1.0.0",
+  "description": "Ben Kidder's proxy server for mock coupon app item details page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coupon-app/brk-proxy-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coupon-app/brk-proxy-server/issues"
+  },
+  "homepage": "https://github.com/coupon-app/brk-proxy-server#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
