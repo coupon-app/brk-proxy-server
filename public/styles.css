@@ -1,0 +1,16 @@
+#row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+#column {
+	right: 100%;
+	max-size: 700px;
+	padding-right: 15px;
+	border-right: 1px solid #ccc;
+}
+
+#checkout {
+	margin-left: 15px;
+}
