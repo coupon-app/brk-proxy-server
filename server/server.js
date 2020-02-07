@@ -15,14 +15,14 @@ app.get('/api/checkout/:productId', (req, res) => {
 
 app.get('/api/products/:productId', (req, res) => {
   const product = req.params.productId;
-  res.redirect(`http://35.162.182.188/api/products/${product}`);
+  res.redirect(`http://carousel.duckdns.org/api/products/${product}`);
 })
 
 app.get('/api/reviews/:productId', (req, res) => {
   const product = req.params.productId;
   const page = req.params.page;
   const limit = req.params.limit;
-  const url = `http://34.216.202.137/api/reviews/${product}`;
+  const url = `http://service-reviews.duckdns.org/api/reviews/${product}`;
 
   if (page) {
     url += `?page=${page}`;
