@@ -1,16 +1,18 @@
+const compression = require('compression');
 const express = require('express');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(compression());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use('/', express.static(path.resolve(__dirname, '..', 'public')));
 
 app.get('/api/checkout/:productId', (req, res) => {
   const product = req.params.productId;
-  res.redirect(`http://18.188.34.11:3003/api/checkout/${product}`);
+  res.redirect(`http://checkout.duckdns.org/api/checkout/${product}`);
 })
 
 app.get('/api/products/:productId', (req, res) => {

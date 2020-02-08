@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/coupon-app/brk-proxy-server#readme",
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1"
   },
   "devDependencies": {
